@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Youtube Scraper</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+    <div class="wrap">
+
+        <div class ="row header">
+        <% for(var j=0; j<pdata[0].length; j++) {%>
+            <a href="#">
+          <div class="inside">
+            <img src="" alt="" style="display:none;"/>
+            <span class ="title"><%=j%></span>
+          </div>
+          </a>
+          <% } %>
+          </div>
+
+      <% for(var i=0; i<pdata.length; i++) {%>
+        <div class ="row">
+        <% for(var j=0; j<pdata[i].length; j++) {%>
+            <a href="<%= pdata[i][j].url %>">
+          <div class="inside">
+            <img src="<%=pdata[i][j].localfilename %>" alt=""/>
+            <span class ="title"><%=pdata[i][j].title%></span>
+          </div>
+          </a>
+          <% } %>
+          </div>
+      <% } %>
+
+    </div>
+  </body>
+</html>

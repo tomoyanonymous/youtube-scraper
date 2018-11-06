@@ -1,0 +1,17 @@
+{
+  "name": "scrapism",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync -w",
+    "convert":"node collectdata.js&&node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.0",
+    "ejs": "^2.6.1"
+  }
+}

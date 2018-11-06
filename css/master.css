@@ -1,0 +1,42 @@
+.inside img{
+  display: block;
+  max-height:150px;
+}
+.row>a{
+  height:100%;
+}
+body{
+  background-color: #0ff;
+}
+.row{
+  display: flex;
+  justify-content: flex-start;
+  height:200px;
+  padding:0 px;
+  width:none;
+}
+.header{
+  height:40px;
+  padding:0px;
+  top:0;
+  margin-bottom:3px;
+}
+
+.title{
+  display: block;
+  text-align: center;
+  background-color: #00f;
+  color:#ff0;
+  font-size:8pt;
+}
+.inside{
+  height:100%;
+  margin:0px;
+}
+.header a div.inside{
+  width:198px;
+  border:solid 1px #ff0;
+}
+.header .title{
+  font-size:20pt;
+}
